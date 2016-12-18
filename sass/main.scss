@@ -1,0 +1,228 @@
+$cssCore: false;
+$cssHelpers: true;
+$devMode: false;
+
+$color1: rgba(150, 181, 210,1);
+$color2: rgba(52, 114, 197,1);
+$color3: rgba(41, 89, 155,1);
+@import 'ed-grid';
+///  bloque de informacion
+.informacion{
+  color: white;
+  padding: 5px;
+  background-color: $color3;
+}
+.link_social{
+  font-size: 15px;
+  color: white;
+  padding: 3px;
+  &:hover{
+    color:$color3;
+  }
+}
+.sociales{
+  @include from(l){
+    @include mainEnd();
+  }
+}
+
+//bloque de menu
+.carousel-control{
+  @include crossCenter();
+}
+.menu{
+  padding: 5px;
+}
+.main-nav-toggle{
+  @include navToggle(15px,$color3);
+  @include showTo(l);
+  @include to(l){
+    @include crossCenter();
+  }
+}
+.main-nav{
+  @include edNav(right,l);
+}
+.main-menu{
+  @include edMenu(l);
+}
+.main_logo{
+  width: 60px;
+  height: 50px;
+}
+
+//////////////////////////
+.main-banner{
+  box-sizing: border-box;
+  position: relative;
+  height: 400px;
+  &-image{
+    position: absolute;
+    width: 100%;
+    height: 400px;
+    opacity: .4;
+  }
+  &-content{
+    padding: 20px;
+    position: absolute;
+    width: 100%;
+    opacity: 1 !important;
+    text-align: center;
+    width: 100%;
+    height: 400px;
+   // background-color: rgba(0,0,0,0.4);
+  }
+}
+
+////////////////////////////
+.benefits{
+  @include from(xm){
+  @include grid('section',3,5%);
+  }
+}
+.benefit{
+  padding: 20px;
+  border-radius: 15px;
+  &-title{
+    color: $color3;
+    text-align: center;
+    width: 100%;
+    font-size: 45px;
+  }
+  &-image{
+    width: 50px;
+    height: 50px;
+  }
+  &-content{
+    text-align: center;
+    color: rgba($color2,.7);
+  }
+}
+////////////////
+.contacts{
+  margin:15px;
+}
+.contact_item{
+  height: 33%;
+}
+.about-us{
+  margin: 15px;
+  padding: 20px;
+}
+.collapsible-header{
+  background-color: $color1 !important;
+}
+
+//////////////////
+.btn{
+  border-color: $color2 !important;
+}
+
+///////////////////
+.footer{
+  background-color: $color2;
+  &-copyright{
+    background-color: $color3;
+  }
+}
+
+////////  Testimonials
+.view {
+  width: 250px;
+  height: 250px;
+  margin: 10px;
+  float: left;
+  border: 10px solid rgba($color2,.6);
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  box-shadow: 1px 1px 2px #e6e6e6;
+  cursor: default;
+  background: #fff url(../images/bgimg.jpg) no-repeat center center
+}
+.view .mask, .view .content {
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0
+}
+.view img {
+  display: block;
+  position: relative
+}
+.view h2 {
+  box-sizing: border-box;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  margin: 20px 0 0 0
+}
+.view p {
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-size: 12px;
+  position: relative;
+  color: #fff;
+  padding: 10px 20px 20px;
+  text-align: center
+}
+.view a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  background: $color3;
+  color: #fff;
+  text-transform: uppercase;
+  box-shadow: 0 0 1px #000
+}
+.view a.info:hover {
+  box-shadow: 0 0 5px #000
+}
+.view-fourth img {
+  transition: all 0.4s ease-in-out 0.2s;
+  opacity: 1;
+}
+.view-fourth .mask {
+  background-color: rgba($color2,0.8);
+  opacity: 0;
+  transform: scale(0) rotate(-180deg);
+  transition: all 0.4s ease-in;
+  border-radius: 0px;
+}
+.view-fourth h2{
+  opacity: 0;
+  border-bottom: 1px solid $color3;
+  background: transparent;
+  margin: 20px 40px 0px 40px;
+  transition: all 0.5s ease-in-out;
+}
+.view-fourth p {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.view-fourth a.info {
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.view-fourth:hover .mask {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+  transition-delay: 0.2s;
+}
+.view-fourth:hover img 	  {
+  transform: scale(0);
+  opacity: 0;
+  transition-delay: 0s;
+}
+.view-fourth:hover h2,
+.view-fourth:hover p,
+.view-fourth:hover a.info{
+  opacity: 1;
+  transition-delay: 0.5s;
+}

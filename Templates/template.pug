@@ -1,0 +1,46 @@
+html
+    head
+        //
+            Este comentario se compilara
+        //- Este comentario con guion no se compilara
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+        meta(name="author" content="Sergio Sandoval")
+        meta(name="copyright" content="sergiosandoval.pe.hu" )
+        meta(name="robots" content="index, follow" )
+        meta(name="keywords" content="instituto, Carlos Cueto Fernandini, carrera profesional, insituto superior")
+        meta(name="description" content="Instituto superior ubicado en el distrito de comas-Lima, Peru" )
+        meta(property="og:title" content="ISTP Carlos Cueto Fernandini" )
+        meta(property="og:description" content="Instituto superior ubicado en el distrito de comas-Lima, Peru")
+        meta(property="og:type" content="website" )
+        meta(property="og:url" content="istpcueto.edu.pe" )
+        meta(property="og:image" content="la url donde está la imagen" )
+        meta(property="og:site_name" content="istpcueto")
+
+        link(rel="stylesheet" href="css/main.css")
+        link(rel="stylesheet" href="css/eskju.jquery.scrollflow.css")
+        link(rel="stylesheet" href="css/font-awesome.css")
+        link(rel="stylesheet" href="css/x-main.css")
+        link(rel="stylesheet" href="css/y-main.css")
+
+        link(rel="shortcut icon" href="img/logo_cueto.ico" type="image/x-icon")
+        title  ISTP Carlos Cueto Fernandini
+    body
+        //los include son pedazos traidos es decir pedazos q se repiten para formar la plantilla
+        //los block se pueden personalizar en cada contenido
+        include blocks/info
+        include blocks/main_nav
+        block section1
+        block section2
+        block section3
+        block section4
+        block section5
+        p dfklsdjfasdfasdfkjasdhfkjhs
+        include blocks/footer
+        script(src="js/jquery1.11.js")
+        script(src="js/ed-grid.js")
+        script(src="js/bootstrap.js")
+        script(src="js/materialize.js")
+        script(src="js/eskju.jquery.scrollflow.js")
+        script(src="js/space.js")
+        script(src="js/scripts.js")

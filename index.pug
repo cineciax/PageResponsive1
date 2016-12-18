@@ -1,0 +1,104 @@
+extends Templates/template
+block section1
+    .ed-container.main-banner#main-banner.section.scrollspy
+        img.main-banner-image(src="img/img1.jpg")
+        .ed-item.main-banner-content
+            h2  Bienvenido a nuestra Institucion
+            br
+            p   sadf asdf asdf asd fasd fasd fasd fasd fasdf a dsa fa dsfa sda
+block section2
+    .ed-container
+        .ed-item.main-center
+            h3 Que te brindamos
+        .ed-item.main-center
+            .ed-container.benefits
+                section.benefit.main-center.z-depth-2
+                    img.benefit-image(src="img/logo_cueto.jpg")
+                    h1.benefit-title   Beneficio1
+                    p.benefit-content
+                        | asdfadsfasdfasjkghakfdhgajkdhasdh gakjs hgakjsd ghakjs hgkjash dgkjahsg
+                section.benefit.main-center.z-depth-2
+                    img.benefit-image(src="img/logo_cueto.jpg")
+                    h1.benefit-title   Beneficio1
+                    p.benefit-content
+                        | asdfadsfasdfasjkghakfdhgajkdhasdh gakjs hgakjsd ghakjs hgkjash dgkjahsg
+                section.benefit.main-center.z-depth-2
+                    img.benefit-image(src="img/logo_cueto.jpg")
+                    h1.benefit-title   Beneficio1
+                    p.benefit-content
+                        |asdfadsfasdfasjkghakfdhgajkdhasdh gakjs hgakjsd ghakjs hgkjash dgkjahsg
+block section3
+    .ed-container.about-us#about-us.section.scrollspy
+        .ed-item.main-center
+            h3 Sobre Nosotros
+        .ed-item.xm-50.main-end.no-padding
+            img(src="img/img2.jpg" width="80%")
+        .ed-item.xm-50.no-padding
+            ul.collapsible(data-collapsible="accordion")
+                li
+                    .collapsible-header
+                        i.material-icons Vision
+                    .collapsible-body
+                        p Lorem ipsum dolor sit amet
+                li
+                    .collapsible-header
+                        i.material-icons Mision
+                    .collapsible-body
+                        p Lorem ipsum dolor sit amet
+block section4
+    .contacts
+        .ed-container#contact.section.scrollspy
+            .ed-item.xm-50.contact.z-depth-2
+                form
+                    .input-field
+                        input#nombre.validate(name="nombre" type="text")
+                        label(for="nombre") Nombre
+                    .input-field
+                        input#email.validate(name="email" type="email")
+                        label(for="email") Email
+                    .input-field
+                        textarea#textarea1.materialize-textarea(name="mensaje" maxlength="250" length="250")
+                        label(for="textarea1") Mensaje
+                    button.waves-effect.btn(type="submit") Enviar
+                    button.waves-effect.btn(type="reset") Limpiar
+            .ed-item.xm-50
+                .ed-container.abcenter
+                    .ed-item.contact_item
+                        
+                        p asdasfsadfasdfasdfasdf
+                    .ed-item.contact_item
+                        p asdasfsadfasdfasdfasdf
+                    .ed-item.contact_item
+                        p asdasfsadfasdfasdfasdf
+block section5
+    .testimonials-container#testimonials.section.scrollspy
+        .ed-container
+            .ed-item.views.main-center
+                .view.view-fourth.main-center.ed-item
+                    img(src="img/img1.jpg")
+                    .mask
+                    .content.main-center
+                        h2 Hover Style #2
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus inventore laborum nesciunt, nobis quaerat tenetur!
+                        a(href="#" class="info") Read More
+                .view.view-fourth.main-center.ed-item
+                    img(src="img/img1.jpg")
+                    .mask
+                    .content.main-center
+                        h2 Hover Style #2
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus inventore laborum nesciunt, nobis quaerat tenetur!
+                        a(href="#" class="info") Read More
+                .view.view-fourth.main-center.ed-item
+                    img(src="img/img1.jpg")
+                    .mask
+                    .content.main-center
+                        h2 Hover Style #2
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus inventore laborum nesciunt, nobis quaerat tenetur!
+                        a(href="#" class="info") Read More
+                .view.view-fourth.main-center.ed-item
+                    img(src="img/img1.jpg")
+                    .mask
+                    .content.main-center
+                        h2 Hover Style #2
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus inventore laborum nesciunt, nobis quaerat tenetur!
+                        a(href="#" class="info") Read More
