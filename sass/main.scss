@@ -11,13 +11,19 @@ $color3: rgba(41, 89, 155,1);
   color: white;
   padding: 5px;
   background-color: $color3;
+  @include from(l){
+    height: 35px;
+  }
 }
 .link_social{
+  box-sizing: border-box;
   font-size: 15px;
   color: white;
-  padding: 3px;
+  padding: 5px;
   &:hover{
-    color:$color3;
+    color: white;
+    border:1px solid white;
+    border-radius: 10px;
   }
 }
 .sociales{
