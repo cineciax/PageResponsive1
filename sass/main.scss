@@ -109,7 +109,10 @@ $color3: rgba(41, 89, 155,1);
   margin:15px;
 }
 .contact_item{
-  height: 33%;
+  min-height: 20vh;
+  &_icon{
+    font-size: 30px !important;
+  }
 }
 .about-us{
   margin: 15px;
